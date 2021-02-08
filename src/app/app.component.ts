@@ -9,12 +9,7 @@ export class AppComponent {
   title = 'testAngular';
 
 
-  postForm: new FormGroup ({
-    tittre: new FormControl(),
-    discription: new FormControl(),
-    categorie: new FormControl(),
-    date: new FormControl(),
-  })
+
 }
 
 

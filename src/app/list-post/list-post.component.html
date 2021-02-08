@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;" *ngFor='let post of postTab; let i=index'>
+    <div class="card-body">
+        <h5 class="card-title">Nom : {{post.titre}}</h5>
+        <p class="card-text">Description : {{post.discription}}</p>
+        <h6> Categorie : {{post.categorie}}</h6>
+        <h6>Date : {{post.date}}</h6>
+        <button type="button" class="btn btn-danger" (click)="delete(i)">Supprimer</button>
+        <a [routerLink]="['/updatePost',post.titre]">Modifier</a>
+
+
+    </div>
+</div>
